@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Do Chrome Extension",
+    "description": "Laissez un commentaire sur n'importe quel contenu du web",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "icons": {
+        "16": "assets/images/logoT.png",
+        "32": "assets/images/logoT.png",
+        "48": "assets/images/logoT.png",
+        "128": "assets/images/logoT.png"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "storage",
+		"tabs",
+		"activeTab",
+        "contextMenus",
+        "scripting"
+    ],
+    "commands": {
+        "_execute_action": {
+                "suggested_key": {
+            "default": "Ctrl+Shift+F",
+            "windows": "Ctrl+Shift+Y",
+            "mac": "Command+Shift+Y",
+            "linux": "Ctrl+Shift+S"
+        }
+        }
+
+    }
+    
+}

@@ -1,0 +1,22 @@
+{
+  "name": "do-chrome-extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "crypto2": "^2.0.0",
+    "limes": "^6.1.10",
+    "star-rating.js": "^4.3.1",
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "prettier": "3.3.3"
+  }
+}

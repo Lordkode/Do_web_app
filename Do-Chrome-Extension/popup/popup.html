@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="bulma.min.css" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do Chrome Extension</title>
+  </head>
+  <body class="">
+
+    <div class="is-widescreen m-5 is-full popup" style="width: 500px">
+      <div class="container">
+        <h1 class="title">Comment this content</h1>
+
+        <!-- STATUS -->
+        <div class="field flex is-grouped">
+          <label for="" class="label inline-flex">Status</label>
+
+
+          <label class="switch">
+            <input id="running" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+
+          <span class="tag is-success inline-flex pointer  is-link has-text-white" id="running"><a href="" class=" is-link has-text-white">Go to Do</a></span>
+
+          <span class="tag is-success inline-flex pointer  is-link has-text-white" id="running"><a href="" class=" is-link has-text-white">See Comments</a></span>
+
+        </div>
+      </div>
+
+
+
+      <!-- COMMENT FORM -->
+
+      
+      <div class="container" id="commentSection">
+        <hr>
+
+          <div class="field">
+            <label for="" class="label">Comment this content</label>
+          </div>
+
+            <form action="">
+
+              <fieldset required style="margin-bottom: 20px; justify-content: space-between; display: inline-flex; width: 100%;" data-role="controlgroup" 
+                      data-type="horizontal">
+                      <div class="">
+                        <input type="radio" name="gfg" 
+                                        id="gfg1" value="1" >
+                                  <label for="gfg1">1- Terrible</label>
+                      </div>
+                
+
+                <div class="">
+                  <input type="radio" name="gfg" id="gfg2" 
+                                  value="2">
+                            <label for="gfg2">2- Poor</label>
+                </div>
+                
+
+                <div class="">
+                  <input type="radio" name="gfg" 
+                       id="gfg3" value="3">
+                <label for="gfg3">3- Good</labe>
+                </div>
+                
+    
+                
+                <div class="">
+                  <input type="radio" name="gfg" 
+                       id="gfg4" value="4">
+                <label for="gfg4">4- Great</label>
+                </div>
+
+                <div class="">
+                  <input type="radio" name="gfg" 
+                       id="gfg5" value="5">
+                <label for="gfg5">5- Fantastic</label>
+                </div>
+              </fieldset>
+
+              <div class="control">
+                  <input class="input" type="text" placeholder="Comment title.." id="commentTitle">
+              </div>
+            
+              <div class="field">
+                <div class="control mt-5">
+                  <textarea class="textarea" placeholder="Comment description..." id="commentDescription"></textarea>
+                </div>
+              </div>
+
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link is-light">Cancel</button>
+                </div>
+                <div class="control">
+                  <button class="button is-link" id="commentSubmit">Submit Comment</button>
+                </div>
+              </div>
+            </form>
+
+  </body>
+
+  <script src="popup.js"></script>
+
+</html>
+
+
+<style>
+  body, .popup{
+    height: 70%;
+
+    -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+
+  ::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+  }
+  }
+</style>

@@ -1,0 +1,25 @@
+services:
+  backend:
+    build: ./Do/
+    ports:
+      - "127.0.0.2:8080:8080"
+    depends_on:
+      - db
+
+  db:
+    build: ./Do_db/
+    ports:
+      - "3307:3306"
+    expose:
+      - 3307
+    env_file:
+      - ./Do_db/.env
+    volumes:
+      - ./Do_db/mysql/db_save:/var/lib/mysql
+
+  frontend:
+    build: ./front-end/Do
+    ports:
+      - "127.0.0.3:5173:5173"
+    depends_on:
+      - backend
